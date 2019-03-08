@@ -31,6 +31,9 @@
                                         <rect key="frame" x="0.0" y="54" width="276.5" height="57"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                         <state key="normal" title="Start"/>
+                                        <connections>
+                                            <segue destination="K0k-Dj-HtN" kind="show" id="1wh-2b-GX9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -151,10 +154,16 @@
                                     </stackView>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGm-1b-Qx3" userLabel="Table1Switch">
                                         <rect key="frame" x="58" y="265.5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tableSwitchOn:" destination="K0k-Dj-HtN" eventType="valueChanged" id="pa5-l9-dBW"/>
+                                        </connections>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MD-jv-kOz">
                                         <rect key="frame" x="66.5" y="321.5" width="32" height="128.5"/>
                                         <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="K0k-Dj-HtN" eventType="touchUpInside" id="PFr-Vo-Cpi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -167,12 +176,6 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="xYW-kG-JFI"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is your birth date in this list?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msk-Fy-06F">
-                                <rect key="frame" x="39" y="26.5" width="297" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="SKM-cd-Qik" userLabel="Table5">
                                 <rect key="frame" x="105" y="108.5" width="165" height="450"/>
                                 <subviews>
@@ -268,10 +271,16 @@
                                     </stackView>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HmX-cZ-ZK9" userLabel="Table5Switch">
                                         <rect key="frame" x="58" y="265.5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tableSwitchOn:" destination="K0k-Dj-HtN" eventType="valueChanged" id="6HK-OZ-NyS"/>
+                                        </connections>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4T-Re-tli">
                                         <rect key="frame" x="66.5" y="321.5" width="32" height="128.5"/>
                                         <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="K0k-Dj-HtN" eventType="touchUpInside" id="aRT-aY-51f"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -374,10 +383,16 @@
                                     </stackView>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LWY-MR-9Uc" userLabel="Table4Switch">
                                         <rect key="frame" x="58" y="265.5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tableSwitchOn:" destination="K0k-Dj-HtN" eventType="valueChanged" id="bhZ-B5-wN1"/>
+                                        </connections>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdb-ik-WAT">
                                         <rect key="frame" x="66.5" y="321.5" width="32" height="128.5"/>
                                         <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="K0k-Dj-HtN" eventType="touchUpInside" id="hBx-Oc-cbM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -480,11 +495,16 @@
                                     </stackView>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mPQ-iL-MIh" userLabel="Table3Switch">
                                         <rect key="frame" x="58" y="265.5" width="51" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="tableSwitchOn:" destination="K0k-Dj-HtN" eventType="valueChanged" id="uhp-M8-mSn"/>
+                                        </connections>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe9-rn-qhD">
-                                        <rect key="frame" x="66.5" y="265.5" width="32" height="184.5"/>
+                                        <rect key="frame" x="66.5" y="321.5" width="32" height="128.5"/>
                                         <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="K0k-Dj-HtN" eventType="touchUpInside" id="0l0-5R-meM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -492,11 +512,6 @@
                                     <constraint firstAttribute="width" constant="165" id="8iq-Kt-2sF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="naJ-xP-Y5O"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="mPQ-iL-MIh"/>
-                                    </mask>
-                                </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="n1M-Al-F0x" userLabel="Table2">
                                 <rect key="frame" x="105" y="108.5" width="165" height="450"/>
@@ -593,10 +608,16 @@
                                     </stackView>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xh5-t1-vfr" userLabel="Table2Switch">
                                         <rect key="frame" x="58" y="265.5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="tableSwitchOn:" destination="K0k-Dj-HtN" eventType="valueChanged" id="7EF-L3-Gb9"/>
+                                        </connections>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoh-DM-vB3">
                                         <rect key="frame" x="66.5" y="321.5" width="32" height="128.5"/>
                                         <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="K0k-Dj-HtN" eventType="touchUpInside" id="SAU-Wp-wBz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -606,22 +627,27 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="450" id="y89-zf-Qmk"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is your Birth date in the list below?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6y-xc-t5Q">
+                                <rect key="frame" x="67" y="84" width="277" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="msk-Fy-06F" firstAttribute="centerX" secondItem="XG2-hf-NVc" secondAttribute="centerX" id="89K-CQ-FXy"/>
-                            <constraint firstItem="msk-Fy-06F" firstAttribute="centerX" secondItem="u4c-Ux-ogz" secondAttribute="centerX" id="C7L-HR-zVn"/>
                             <constraint firstItem="a63-0P-EtB" firstAttribute="centerX" secondItem="u4c-Ux-ogz" secondAttribute="centerX" id="MqU-qm-QJu"/>
+                            <constraint firstItem="c6y-xc-t5Q" firstAttribute="leading" secondItem="G53-3x-OT3" secondAttribute="leading" constant="67" id="PMG-GC-nOK"/>
                             <constraint firstItem="n1M-Al-F0x" firstAttribute="centerX" secondItem="u4c-Ux-ogz" secondAttribute="centerX" id="ZEr-Pj-oFA"/>
+                            <constraint firstItem="G53-3x-OT3" firstAttribute="trailing" secondItem="c6y-xc-t5Q" secondAttribute="trailing" constant="31" id="aAy-Ei-In2"/>
                             <constraint firstItem="SKM-cd-Qik" firstAttribute="centerX" secondItem="u4c-Ux-ogz" secondAttribute="centerX" id="asR-i9-O5t"/>
                             <constraint firstItem="XG2-hf-NVc" firstAttribute="centerX" secondItem="u4c-Ux-ogz" secondAttribute="centerX" id="fwE-kK-xRl"/>
-                            <constraint firstItem="msk-Fy-06F" firstAttribute="centerX" secondItem="w8z-jy-wci" secondAttribute="centerX" id="iXm-60-bBD"/>
                             <constraint firstItem="w8z-jy-wci" firstAttribute="centerX" secondItem="u4c-Ux-ogz" secondAttribute="centerX" id="kZH-Wr-beL"/>
                             <constraint firstItem="XG2-hf-NVc" firstAttribute="centerY" secondItem="u4c-Ux-ogz" secondAttribute="centerY" id="q2u-5I-gRX"/>
                             <constraint firstItem="w8z-jy-wci" firstAttribute="centerY" secondItem="u4c-Ux-ogz" secondAttribute="centerY" id="q4p-lC-BGk"/>
                             <constraint firstItem="a63-0P-EtB" firstAttribute="centerY" secondItem="u4c-Ux-ogz" secondAttribute="centerY" id="thR-Bs-hra"/>
+                            <constraint firstItem="c6y-xc-t5Q" firstAttribute="top" secondItem="G53-3x-OT3" secondAttribute="top" constant="20" id="uMd-Hk-3cF"/>
                             <constraint firstItem="SKM-cd-Qik" firstAttribute="centerY" secondItem="u4c-Ux-ogz" secondAttribute="centerY" id="wRp-Qg-uoe"/>
-                            <constraint firstItem="w8z-jy-wci" firstAttribute="top" secondItem="msk-Fy-06F" secondAttribute="bottom" constant="52" id="yR4-9a-W0T"/>
                             <constraint firstItem="n1M-Al-F0x" firstAttribute="centerY" secondItem="u4c-Ux-ogz" secondAttribute="centerY" id="ym9-B3-DOx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G53-3x-OT3"/>
@@ -629,15 +655,21 @@
                     <tabBarItem key="tabBarItem" title="Item" id="ZYp-MC-ecw"/>
                     <connections>
                         <outlet property="table1StackView" destination="w8z-jy-wci" id="Eg5-E8-oNb"/>
-                        <outlet property="table1Switch" destination="gGm-1b-Qx3" id="y8S-rZ-Lmg"/>
                         <outlet property="table2StackView" destination="n1M-Al-F0x" id="Vjf-z2-I5u"/>
-                        <outlet property="table2Switch" destination="xh5-t1-vfr" id="ndK-4W-ph4"/>
                         <outlet property="table3StackView" destination="XG2-hf-NVc" id="dm8-Qr-add"/>
-                        <outlet property="table3Switch" destination="mPQ-iL-MIh" id="mCD-ef-J3E"/>
                         <outlet property="table4StackView" destination="a63-0P-EtB" id="9rh-Qu-ngt"/>
-                        <outlet property="table4Switch" destination="LWY-MR-9Uc" id="AKC-ag-fww"/>
                         <outlet property="table5StackView" destination="SKM-cd-Qik" id="QgV-7d-a9F"/>
-                        <outlet property="table5Switch" destination="HmX-cZ-ZK9" id="luI-tj-grO"/>
+                        <outletCollection property="nextButtonTapped" destination="4MD-jv-kOz" collectionClass="NSMutableArray" id="lzc-mk-1xE"/>
+                        <outletCollection property="nextButtonTapped" destination="w4T-Re-tli" collectionClass="NSMutableArray" id="I2N-s2-nBv"/>
+                        <outletCollection property="nextButtonTapped" destination="Xdb-ik-WAT" collectionClass="NSMutableArray" id="Mfq-x2-20x"/>
+                        <outletCollection property="nextButtonTapped" destination="Pe9-rn-qhD" collectionClass="NSMutableArray" id="Ibl-JU-HqW"/>
+                        <outletCollection property="nextButtonTapped" destination="aoh-DM-vB3" collectionClass="NSMutableArray" id="dTk-QD-t4U"/>
+                        <outletCollection property="tableSwitch" destination="gGm-1b-Qx3" collectionClass="NSMutableArray" id="1jN-Qd-EEm"/>
+                        <outletCollection property="tableSwitch" destination="HmX-cZ-ZK9" collectionClass="NSMutableArray" id="4eH-sY-bIr"/>
+                        <outletCollection property="tableSwitch" destination="LWY-MR-9Uc" collectionClass="NSMutableArray" id="y0w-Yx-Ihn"/>
+                        <outletCollection property="tableSwitch" destination="mPQ-iL-MIh" collectionClass="NSMutableArray" id="3H7-9i-65N"/>
+                        <outletCollection property="tableSwitch" destination="xh5-t1-vfr" collectionClass="NSMutableArray" id="2b6-4e-0vH"/>
+                        <segue destination="KjH-7U-OCm" kind="show" identifier="outputSegue" id="GFH-ZU-SOq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jV-Vu-q5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -651,11 +683,40 @@
                     <view key="view" contentMode="scaleToFill" id="64e-jG-vta">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nYS-dk-0zI">
+                                <rect key="frame" x="99.5" y="289" width="176" height="89"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTB-cZ-MYe">
+                                        <rect key="frame" x="48" y="0.0" width="80.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX1-rH-8Z5">
+                                        <rect key="frame" x="0.0" y="41" width="176" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Restart Game"/>
+                                        <connections>
+                                            <segue destination="iFx-mp-yOu" kind="unwind" unwindAction="unwindToInitialPageWithUnwindSegue:" id="7ht-lO-wrb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="176" id="c3G-QC-dhv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nYS-dk-0zI" firstAttribute="centerX" secondItem="64e-jG-vta" secondAttribute="centerX" id="IA9-zx-4ru"/>
+                            <constraint firstItem="nYS-dk-0zI" firstAttribute="centerY" secondItem="64e-jG-vta" secondAttribute="centerY" id="She-2M-FlX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ddm-ZY-2IY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tC9-lv-owl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="iFx-mp-yOu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2374" y="134"/>
         </scene>
