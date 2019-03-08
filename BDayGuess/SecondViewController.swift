@@ -30,7 +30,6 @@ class SecondViewController: UIViewController {
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         index += 1
         restart()
-        
         updateUI()
         print(date)
         
@@ -73,7 +72,6 @@ class SecondViewController: UIViewController {
         if index > 4 {
             performSegue(withIdentifier: "outputSegue", sender: nextButtonTapped)
             
-            
         }
     }
     func calculateDate(){
@@ -83,10 +81,9 @@ class SecondViewController: UIViewController {
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let sender =  sender as? UIButton else {return}
-        if index > 4 {
-            //segue.destination.
-//            segue.destination.navigationItem.title = "Forgot password"
+        if segue.destination is ThirdViewController {
+            let vc = segue.destination as? ThirdViewController
+            vc?.output = "Your birth date is on \(date)"
         }
     }
     /*

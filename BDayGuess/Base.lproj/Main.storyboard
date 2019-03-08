@@ -687,7 +687,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nYS-dk-0zI">
                                 <rect key="frame" x="99.5" y="289" width="176" height="89"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTB-cZ-MYe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTB-cZ-MYe">
                                         <rect key="frame" x="48" y="0.0" width="80.5" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <nil key="textColor"/>
@@ -714,6 +714,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ddm-ZY-2IY"/>
                     </view>
+                    <connections>
+                        <outlet property="outPutLabel" destination="FTB-cZ-MYe" id="0JC-k8-B6G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tC9-lv-owl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="iFx-mp-yOu" userLabel="Exit" sceneMemberID="exit"/>

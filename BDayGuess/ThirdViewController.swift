@@ -9,10 +9,12 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
-
+    
+    var output : String = ""
+    @IBOutlet weak var outPutLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        outPutLabel?.text = output
         // Do any additional setup after loading the view.
     }
     
